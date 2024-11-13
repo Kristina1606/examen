@@ -1,0 +1,310 @@
+/* Menu */
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+    background: #E54033;
+	list-style: none;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #E54033;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #385c4a;
+}
+
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	
+	visibility: visible;
+}
+#submenu li {
+    display: block;
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#385c4a;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #C9C9C9;
+    height: 150px;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.titcab {
+    font-size: 1.5em;
+    color: black;
+}
+
+/* buscador */
+.search-form{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-input{
+    padding: 5px 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button{
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+
+#cabecera {
+    text-align: center;
+}
+
+#menu {
+    background-color: beige;
+}
+
+
+/* Slider */
+body{
+ 
+    font-family: sans-serif;
+  }
+  
+  .container{
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .slider-container {
+    width: 100vw;          /* Полная ширина экрана */
+    height: 100vh;         /* Полная высота экрана */
+    /*overflow: hidden;    
+    position: relative;*/
+}
+
+.banner {
+    width: 100%;           /* Растягиваем на всю ширину */
+    height: 100%;          /* Растягиваем на всю высоту */
+    object-fit: cover;     /* Сохраняем пропорции и заполняем весь контейнер */
+}
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+
+
+/* Book List */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #C9C9C9;
+    box-shadow: 0 4 px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.book-card img {
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-cover {
+    width: 100%;
+    height: auto;
+}
+
+.book-info {
+    padding: 15px;
+}
+
+.book-title {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.book-autor {
+    color: #555;
+    font-style: italic;
+    margin: 0;
+}
+
+.book-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* blog html*/
+.book-details {
+    display: flex; /* Flexbox для выравнивания по горизонтали */
+    align-items: flex-start;  /* Выравнивание по верхнему краю */
+    background-color: #C9C9C9; /* Цвет фона для всего блока */
+    color: #333;  /* Цвет текста */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.book-cover img {
+    width: 200px;   /* Ширина изображения */
+    height: auto;   /* Автоматическая высота */
+    border-radius: 8px;   /* Закругленные углы для изображения */
+    margin-right: 20px;    /* Отступ справа для расстояния между обложкой и текстом */
+}
+
+.book-info h2 {
+    color: #E54033;              /* Цвет заголовка */
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    margin: 5px 0;               /* Отступы между строками информации */
+    font-size: 16px;
+}
+
+.book-info strong {
+    color: #333;                 /* Цвет для выделения названия характеристик */
+}
+
+.book-review-video {
+    /* margin-top: 20px; */       /* Отступ сверху */
+    text-align: center;      /* Центрирование видео */
+}
+
+.book-review-video h3 {
+    color: #E54033;          /* Цвет заголовка для раздела видео */
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
